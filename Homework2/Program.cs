@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Homework2
+﻿namespace Homework2
 {
     class Homework2
     {

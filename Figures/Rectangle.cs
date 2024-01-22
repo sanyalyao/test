@@ -1,22 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Homework1
+﻿namespace Homework1
 {
     class Rectangle : Figure
     {
-        public Rectangle(double a, double b)
-        {
-            this.a = a;
-            this.b = b;
-        }
+        public Rectangle(double a, double b) : base(a, b) { }
 
-        public double Measure()
+        public override double Measure()
         {
-            return a * b;
+            return A * B;
         }
     }
 }

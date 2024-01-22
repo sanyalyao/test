@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework1
 {
@@ -11,16 +7,13 @@ namespace Homework1
     /// </summary>
     class ScaleneTriangle : Figure
     {
-        public ScaleneTriangle(int a, int b, int c)
-        {
-            this.a = a; this.b = b; this.c = c;
-        }
+        public ScaleneTriangle(int a, int b, int c) : base(a, b, c) { }
 
-        public double Measure()
+        public override double Measure()
         {
-            var p = (a + b + c) / 2;
+            var p = (A + B + C) / 2;
 
-            return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
         }
     }
 }

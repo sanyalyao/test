@@ -1,15 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Homework1
+﻿namespace Homework1
 {
     class Figure
     {
-        protected double a { get; set; }
-        protected double b { get; set; }
-        protected double c { get; set; }
+        protected double A { get; set; }
+        protected double B { get; set; }
+        protected double C { get; set; }
+
+        protected Figure(double a, double b, double c)
+        {
+            A = a; 
+            B = b; 
+            C = c;
+        }
+
+        protected Figure(double a)
+        {
+            A = a;
+        }
+
+        protected Figure(double a, double b)
+        {
+            A = a;
+            B = b;
+        }
+
+        public virtual double Measure()
+        {
+            return double.NaN;
+        }
     }
 }

@@ -1,10 +1,4 @@
 ﻿using Homework2.Doctors;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework2
 {
@@ -35,7 +29,7 @@ namespace Homework2
                         doctor.Care(patient.Name);
                         break;
                     }
-                default:
+                    default:
                     {
                         var doctor = new Therapist();
                         patient.PrimaryCareProvider = doctor.GetType().Name;

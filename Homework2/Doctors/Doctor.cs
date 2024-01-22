@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Homework2
+﻿namespace Homework2.Doctors
 {
     class Doctor
     {
@@ -15,6 +9,6 @@ namespace Homework2
         public virtual void Care(string name)
         {
             Console.WriteLine($"У пациента {name} лечащий врач - ???");
-        }   
+        }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework1
 {
@@ -11,14 +7,11 @@ namespace Homework1
     /// </summary>
     class IsoscelesTriangle : Figure
     {
-        public IsoscelesTriangle(double a, double b)
-        {
-            this.a = a; this.b = b;
-        }
+        public IsoscelesTriangle(double a, double b) : base(a, b) { }
 
-        public double Measure()
+        public override double Measure()
         {
-            return 0.5 * b * Math.Sqrt(Math.Pow(a,2) - (Math.Pow(b,2) / 4));
+            return 0.5 * B * Math.Sqrt(Math.Pow(A,2) - (Math.Pow(B,2) / 4));
         }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework1
 {
@@ -11,14 +7,11 @@ namespace Homework1
     /// </summary>
     class EquilateralTriangle : Figure
     {
-        public EquilateralTriangle(double a) 
-        {
-            this.a = a;
-        }
+        public EquilateralTriangle(double a) : base(a) { }
 
-        public double Measure()
+        public override double Measure()
         {
-            return (Math.Pow(a, 2) * Math.Sqrt(3))/4;
+            return (Math.Pow(A, 2) * Math.Sqrt(3))/4;
         }
     }
 }
